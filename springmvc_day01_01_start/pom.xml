@@ -20,6 +20,19 @@
     <spring.version>5.0.2.RELEASE</spring.version>
   </properties>
 
+  <distributionManagement>
+	<repository>
+		<id>release_user</id>
+		<name>Release Deploy</name>
+		<url>http://localhost:8081/repository/maven-releases/</url>
+	</repository> 
+	<snapshotRepository>
+		<id>snapshot_user</id>
+		<name>Snapshot Deploy</name>
+		<url>http://localhost:8081/repository/maven-snapshots/</url>
+	</snapshotRepository>
+  </distributionManagement>
+
   <dependencies>
     <dependency>
       <groupId>org.springframework</groupId>
